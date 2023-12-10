@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color:lightblue;
+        }
+        h1{
+            text-align: center;
+           
+        }
+
+        .sub{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            font-size: 18px;
+        }
+
+        .in{
+            display: flex;
+            align-items: center;
+    
+        }
+        input{
+            width: 254px;
+            height: 1.6rem;
+            text-align: center;
+            font-size: 18px; 
+        }
+        button{
+            margin-left: 41rem;
+            width: 12rem;
+            height: 3rem;
+            text-align: center;
+            background-color: chartreuse;
+            margin-top: 1rem;
+            font-size: 20px;
+        }
+        .left{
+            margin-left: 16rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Utsav's Tip Calculator</h1>
+    <form action="add">
+        <div class="sub">
+            <div class="in left">
+                <p>Enter A Subtotal of the Bill:-</p>
+                <input type="number" name="subtotal">
+            </div>
+            <div class="in right">
+                <p>Enter A Tip Percentage:-</p>
+                <input type="number" name="per">
+            </div>
+            
+        </div>
+        <button>Calculate Bill</button>
+</form>
+    
+</body>
+</html>
